@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Turnyx - Cadastro</title>
+<link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+<div class="card">
+<h2>Turnyx - Cadastro</h2>
+
+
+<label>Nome completo</label>
+<input id="nome" placeholder="Nome" />
+
+
+<label>Email</label>
+<input id="email" placeholder="Email" type="email" />
+
+
+<label>Unidade da loja</label>
+<select id="unidade">
+<option value="Jacarepaguá">Jacarepaguá</option>
+<option value="Tijuca">Tijuca</option>
+</select>
+
+
+<label>Apelido ou nome (exibido na fila)</label>
+<input id="apelido" placeholder="Ex: TH, JP, WD" />
+
+
+<button onclick="salvarCadastro()">Salvar e Entrar na Fila</button>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

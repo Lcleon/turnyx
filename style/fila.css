@@ -1,0 +1,99 @@
+/* ==== TURNYX - NeoGlass Dark Theme ==== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", Arial, sans-serif;
+    background: radial-gradient(circle at top, #0f141b, #050607 70%);
+    color: #e5e5e5;
+}
+
+/* Header superior */
+.header {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    background: rgba(20, 25, 35, 0.45);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    color: #78f7d9;
+    letter-spacing: 1px;
+}
+
+/* container geral */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* primeira posição (piscando) */
+#currentTurn {
+    margin-bottom: 28px;
+    background: linear-gradient(135deg, #78f7d9, #2bd4c0);
+    color: #0c1415;
+    padding: 30px;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    border-radius: 18px;
+    animation: softPulse 1.8s infinite;
+    box-shadow: 0px 0px 45px rgba(59, 233, 214, 0.35);
+}
+
+/* animação */
+@keyframes softPulse {
+    0% { transform: scale(1); opacity: 0.95; }
+    50% { transform: scale(1.03); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.95; }
+}
+
+/* card de lista */
+.queue-list {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 24px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* título da lista */
+.queue-list h3 {
+    font-size: 22px;
+    color: #78f7d9;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* lista */
+.queue-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* itens */
+.queue-list li {
+    font-size: 19px;
+    padding: 14px 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #eafefb;
+}
+
+.queue-list li:last-child {
+    border-bottom: none;
+}
+
+/* efeito suave nos itens */
+.queue-list li:hover {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    transform: translateX(4px);
+    transition: 0.15s;
+}

@@ -1,0 +1,17 @@
+turnyX/
+  index.html
+  fila.html
+  turnyx_queue_page.html
+  entrar.html
+
+  css/
+    style.css        (cadastro)
+    fila.css         (fila + painel)
+    entrar.css       (entrar.html)
+
+  js/
+    script.js        (cadastro)
+    fila.js
+    queue.js
+    enter.js
+    test-data.js     (opcional para testes)

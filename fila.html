@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Turnyx - Sua posição na fila</title>
+<link rel="stylesheet" href="style/fila.css" />
+</head>
+<body>
+<div class="container">
+<h1 class="titulo">Turnyx</h1>
+
+
+<div id="currentTurn" class="card">
+Carregando...
+</div>
+
+
+<div class="queue-list">
+<h3>Próximos</h3>
+<ul id="listaFila"></ul>
+</div>
+
+
+<button onclick="voltarInicio()">Voltar ao início</button>
+</div>
+
+
+<script src="js/fila.js"></script>
+<script src="js/test-data.js"></script>      <!-- opcional para testes -->
+<script src="js/fila.js" defer></script>     <!-- obrigatório -->
+</body>
+</html>

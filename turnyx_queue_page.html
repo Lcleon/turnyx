@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Turnyx - Painel do Líder</title>
+  <link rel="stylesheet" href="style/fila.css" />
+  <style>
+    /* pequenos ajustes locais ao painel */
+    .panel-controls { display:flex; gap:12px; justify-content:center; margin:18px 0; }
+    .unit-btn { padding:10px 18px; border-radius:10px; cursor:pointer; border:none; font-weight:bold; }
+    .unit-btn.active { box-shadow:0 6px 18px rgba(0,0,0,0.4); transform:scale(1.02); }
+    .qr-wrap { text-align:center; margin-top:12px; }
+    .qr-wrap img { width:260px; height:260px; border-radius:8px; box-shadow:0 8px 30px rgba(0,0,0,0.6); }
+    .qr-info { color:#66fcf1; margin-top:8px; font-weight:600; }
+  </style>
+</head>
+<body>
+  <header class="header">Painel do Líder — Turnyx</header>
+
+  <div class="container">
+    <div class="panel-controls">
+      <button id="btnJac" class="unit-btn">Jacarepaguá</button>
+      <button id="btnTij" class="unit-btn">Tijuca</button>
+    </div>
+
+    <div class="qr-wrap">
+      <img id="qrImage" src="" alt="QR Code dinâmico" />
+      <div class="qr-info" id="qrText">QR para: —</div>
+      <div style="margin-top:10px;">
+        <button onclick="proximo()" style="padding:12px 18px; font-size:16px;">Próximo</button>
+      </div>
+    </div>
+
+    <div class="queue-list" style="margin-top:22px;">
+      <h3>Fila Atual</h3>
+      <ul id="listaFila"></ul>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script src="js/queue.js" defer></script>
+<script src="js/fila.js" defer></script>
+
+</body>
+</html>
