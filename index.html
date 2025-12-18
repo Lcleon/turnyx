@@ -5,28 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Turnyx - Cadastro</title>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
 
+  <!-- VÍDEO DE FUNDO -->
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="images/motion2Fast_Motorcycle_delivery.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo em background.
+  </video>
+
+  <!-- OVERLAY ESCURO + VIDRO -->
+  <div class="bg-overlay"></div>
+
   <main class="page">
     <section class="card">
-      <h2>Turnyx — Cadastro</h2>
+      <h2>Cadastro</h2>
 
-      <label for="nome">Nome completo</label>
+      <label>Nome completo</label>
       <input id="nome" placeholder="Nome" />
 
-      <label for="email">Email</label>
+      <label>Email</label>
       <input id="email" placeholder="Email" type="email" />
 
-      <label for="unidade">Unidade da loja</label>
+      <label>Unidade da loja</label>
       <select id="unidade">
         <option value="Jacarepaguá">Jacarepaguá</option>
         <option value="Tijuca">Tijuca</option>
       </select>
 
-      <label for="apelido">Apelido ou nome (exibido na fila)</label>
+      <label>Apelido ou nome (exibido na fila)</label>
       <input id="apelido" placeholder="Ex: TH, JP, WD" />
 
       <button onclick="salvarCadastro()">
@@ -35,7 +43,6 @@
     </section>
   </main>
 
-  <!-- JS -->
   <script src="js/script.js"></script>
 </body>
 </html>
